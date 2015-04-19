@@ -466,6 +466,7 @@ final class ColorFade {
                         SurfaceControl.BUILT_IN_DISPLAY_ID_MAIN), s);
                 st.updateTexImage();
                 st.getTransformMatrix(mTexMatrix);
+                st.release();
             } finally {
                 s.release();
                 st.release();

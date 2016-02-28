@@ -3604,7 +3604,13 @@ public final class Settings {
          * @hide
          */
         public static final String STATUSBAR_COMPONENT = "statusbar_component";
-
+        
+        /**
+         * Toast animations
+         * @hide
+         */
+         public static final String TOAST_ANIMATION = "toast_animation";
+  
         /**
          * Custom System Animations
          *

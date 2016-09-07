@@ -1184,6 +1184,18 @@ public class MediaPlayer implements SubtitleController.Listener
         stayAwake(true);
         _start();
     }
+    
+    /**
+     * M: Add to call by FM, don't require wakelock
+     * @hide
+     */
+    public void startWithoutWakelock() throws IllegalStateException {
+        if (isRestricted()) {
+            _setVolume(0, 0);
+        }
+        //stayAwake(true);
+        _start();
+    }
 
     private native void _start() throws IllegalStateException;
 

@@ -58,8 +58,7 @@ static const char* kPathWhitelist[] = {
   "/system/framework/framework-res.apk",
   "/dev/urandom",
   "/dev/ion",
-  "@netlink@",
-  "/system/framework/org.cyanogenmod.platform-res.apk",
+  "@netlink@"
 };
 
 static const char* kFdPath = "/proc/self/fd";
